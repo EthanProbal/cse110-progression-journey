@@ -1,0 +1,498 @@
+// Task 1
+
+public class BeginnerQuestion1 {
+
+    public static void main(String[] args) {
+        int hungry; // Perfect
+        // int 2AB; // Throws Error
+        // int 312.2; //Throws Error
+        int MOBILE; // Perfect
+        // int "Ans"; //Throws Error
+        int $30; // Perfect
+        // int Yes/No; // Throws Error
+        // int student-id; // Throws Error
+        // int A+3; // Throws Error
+        // int 'X'; // Throws Error
+        // int return; // Throws Error
+
+    }
+}
+
+/*
+ * /* a --> Proper variable
+ * /* b --> Error : Started with Number
+ * /* c --> Error : Started with Number
+ * /* d --> Proper variable
+ * /* e --> Error : It is a string, can't start with ""
+ * /* f --> Proper variable
+ * /* g --> Error : Can't contain Operators (/)
+ * /* h --> Error : Can't contain Operators (-)
+ * /* i --> Error : Can't contain Operators (+)
+ * /* j --> Error : It is a Char, can't start with ''
+ * /* k --> Error : Reserved keywords can't be variables
+ */
+ 
+ // Task 2.1
+ 
+ import java.util.Scanner;
+
+public class BeginnerQuestion2_2_1 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 10;
+
+        System.out.printf("%d\n", a);
+
+    }
+}
+ 
+ // Task 2.2
+ 
+ import java.util.Scanner;
+
+public class BeginnerQuestion2_2_2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 10;
+        int b = 20;
+
+        int result = (a + b);
+
+        System.out.printf("%d\n", result);
+
+    }
+}
+
+// Task 2.3
+
+import java.util.Scanner;
+
+public class BeginnerQuestion2_2_3 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 10;
+        int b = 20;
+
+        int product = (a * b);
+        int division_1 = (a / b);
+        int division_2 = (b / a);
+
+        System.out.printf("Product : %d\n", product);
+        System.out.printf("Division 1 (a / b): %d\n", division_1);
+        System.out.printf("Division 2 (b / a): %d\n", division_2);
+
+    }
+}
+
+// Task 2.4
+
+import java.util.Scanner;
+
+public class BeginnerQuestion2_2_4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = 10;
+        double b = 20;
+
+        double result = (a + b);
+        double product = (a * b);
+        double division_1 = (a / b);
+        double division_2 = (b / a);
+
+        System.out.printf("Sum : %f\n", result);
+        System.out.printf("Product : %f\n", product);
+        System.out.printf("Division 1 (a / b): %f\n", division_1);
+        System.out.printf("Division 2 (b / a): %f\n", division_2);
+
+    }
+}
+
+// Task 2.5
+
+import java.util.Scanner;
+
+public class BeginnerQuestion2_2_5 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = 10;
+        int b = 20;
+
+        double result = (a + b);
+        double product = (a * b);
+        double division_1 = (a / b);
+        double division_2 = (b / a);
+
+        System.out.printf("Sum : %f\n", result);
+        System.out.printf("Product : %f\n", product);
+        System.out.printf("Division 1 (a / b): %f\n", division_1);
+        System.out.printf("Division 2 (b / a): %f\n", division_2);
+
+    }
+}
+
+// Task 2.6
+
+import java.util.Scanner;
+
+public class BeginnerQuestion2_2_6 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String a = "10";
+        String b = "20";
+
+        System.out.println("Result : " + (a + b));
+
+        // Vice Versa part
+
+        int A = 10;
+        int B = 20;
+
+        System.out.println("Result (Vice Versa 1) : " + (A + b));
+        System.out.println("Result (Vice Versa 2) : " + (a + B));
+
+    }
+}
+
+// Task 3
+
+import java.util.Scanner;
+
+public class BeginnerQuestion3 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double pi = 3.1416d;
+
+        // System.out.println("Enter radius: ");
+        // double r = sc.nextDouble();
+
+        double r = 4d;
+
+        double area = pi * r * r;
+        double circumference = 2 * pi * r;
+
+        System.out.println("Area: " + area);
+        System.out.println("Circumference : " + circumference);
+
+    }
+}
+
+// Task 4
+
+import java.util.Scanner;
+
+public class BeginnerQuestion4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = 2345;
+        int result = (num % 100);
+
+        System.out.println("Last 2 digits : " + result);
+
+    }
+}
+
+// Task 5
+
+import java.util.Scanner;
+
+public class BeginnerQuestion5 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int inch = 1000;
+        double inchToMeter = 0.0254d;
+
+        double meter = (inch * inchToMeter);
+
+        System.out.println("Converted : " + meter);
+
+    }
+}
+
+// Task 6.a
+
+import java.util.Scanner;
+
+public class IntermediateQuestion6_a {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 20;
+        int b = 30;
+
+        int c;
+
+        c = a; // c = 20
+        a = b; // a = 30
+        b = c; // b = 20
+
+        System.out.printf("a = %d\n", a);
+        System.out.printf("b = %d\n", b);
+
+    }
+}
+
+// Task 6.b
+
+import java.util.Scanner;
+
+public class IntermediateQuestion6_b {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 100;
+        int b = 200;
+
+        a = (a + b); // (100 + 200) = 300
+        // a = 300
+
+        b = (a - b); // (300 - 200) = 100
+        // b = 100 // Value swapped!
+
+        a = (a - b); // (300 - 100) = 200
+        // a = 200 // Value swapped!
+
+        System.out.printf("a = %d\n", a);
+        System.out.printf("b = %d\n", b);
+
+    }
+}
+
+// Task 7
+
+import java.util.Scanner;
+
+public class IntermediateQuestion7 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int minutes = 3456789;
+
+        int days = (minutes / 1440);
+        int years = (days / 365);
+        int remDays = (days % 365);
+
+        System.out.printf("%d minutes is approximately %d years and %d days\n", minutes, years, remDays);
+
+    }
+}
+
+// Task 8
+
+import java.util.Scanner;
+
+public class IntermediateQuestion8 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = 2;
+        int b = 5;
+        int c = 8;
+
+        int result = (2 * b * (c - a) / 3) + 7;
+
+        System.out.println(result);
+
+    }
+}
+
+// Task 9
+
+import java.util.Scanner;
+
+public class IntermediateQuestion9 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // CodeBlock 1
+        int n = 6;
+        int m = 1;
+        int result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 2
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 3
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 4
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 5
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 6
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 7
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 8
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 9
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+        // CodeBlock 10
+        result = (n * m);
+        System.out.printf("%d X %d = %d\n", n, m++, result);
+
+    }
+}
+
+// Task 10
+
+import java.util.Scanner;
+
+public class IntermediateQuestion10 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = 100; // 100 ta number
+        int a = 1; // First (Starting) number
+        int L = 100; // Last (Ending) number
+
+        int S = n * (a + L) / 2;
+
+        System.out.printf("Sum : %d\n", S);
+    }
+}
+
+// Task 11
+
+import java.util.Scanner;
+
+public class ExpertQuestion11 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = 4.5d;
+        double b = 9.5d;
+        double cSquare = (b * b) - (a * a);
+
+        double c = Math.sqrt(cSquare);
+
+        double sinA = (a / c);
+        double sinB = (b / c);
+        double cosA = (b / c);
+        double cosB = (a / c);
+
+        System.out.printf("sinA = %f\n", sinA);
+        System.out.printf("cosA = %f\n", cosA);
+        System.out.printf("sinB = %f\n", sinB);
+        System.out.printf("cosB = %f\n", cosB);
+
+    }
+}
+
+// Task 12
+
+import java.util.Scanner;
+
+public class ExpertQuestion12 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int id = 23221454;
+        int lastTwoDigit = (id % 100);
+
+        int firstNum = (lastTwoDigit / 10);
+        int lastNum = (lastTwoDigit % 10);
+
+        System.out.println(lastNum);
+        System.out.println(firstNum);
+
+    }
+}
+
+// Task 13
+
+import java.util.Scanner;
+
+public class ExpertQuestion13 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int id = 24121287; // My bracu student ID
+        double distanceM = id % 10000; // output in meters
+
+        int hr = 5;
+        int min = 56;
+        int sec = 23;
+
+        double timeS = (hr * 3600) + (min * 60) + sec; // output in seconds
+
+        double meterph = (distanceM / timeS);
+
+        double kmph = (meterph * 3.6);
+        double mph = meterph * (3600.0 / 1609.0);
+
+        System.out.printf("Your velocity in km/h is %f\n", kmph);
+        System.out.printf("Your velocity in miles/h is %f\n", mph);
+
+    }
+}
+
+// Task 14
+
+import java.util.Scanner;
+
+public class ExpertQuestion14 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = 8;
+        double b = 3;
+        double aHfSq = Math.pow((0.5 * a), 2);
+        double bSq = Math.pow(b, 2);
+
+        double cSq = aHfSq + bSq;
+        double c = Math.sqrt(cSq);
+
+        double TriAngleArea = 0.25 * a * b;
+        double RectAngleArea = (a * c);
+
+        double totalArea = (4 * TriAngleArea) + RectAngleArea;
+        double circumference = 6 * c;
+
+        System.out.printf("Area : %f sq unit\n", totalArea);
+        System.out.printf("Circumference : %f unit\n", circumference);
+
+    }
+}
