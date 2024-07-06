@@ -8,11 +8,15 @@ public class BeginnerQuestion1_a {
         int start = 24;
         int end = -6;
 
-        while (start > end) {
-            System.out.printf("%d, ", start);
-            start -= 6;
+        while (true) {
+            if (start > end) {
+                System.out.printf("%d, ", start);
+                start -= 6;
+            } else if (start <= end) {
+                System.out.printf("%d", start);
+                break;
+            }
         }
-        System.out.printf("%d", end);
 
     }
 }
