@@ -12,7 +12,7 @@ public class BeginnerQuestion1_b {
             System.out.printf("%d, ", start);
             start += 5;
         }
-        System.out.printf("%d", end);
+        System.out.printf("%d", start);
 
     }
 }
