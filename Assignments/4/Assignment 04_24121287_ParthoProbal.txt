@@ -1,0 +1,361 @@
+// Task 1.a
+
+import java.util.Scanner;
+
+public class BeginnerQuestion1_a {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int start = 24;
+        int end = -6;
+
+        while (true) {
+            System.out.printf("%d, ", start);
+            start -= 6;
+
+            if (start <= end) {
+                System.out.printf("%d", start);
+                break;
+            }
+        }
+
+    }
+}
+
+
+// Task 1.b
+
+import java.util.Scanner;
+
+public class BeginnerQuestion1_b {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int start = -10;
+        int end = 20;
+
+        while (true) {
+            System.out.printf("%d, ", start);
+            start += 5;
+
+            if (start >= end) {
+                System.out.printf("%d", start);
+                break;
+            }
+        }
+
+    }
+}
+
+//Task 2
+
+import java.util.Scanner;
+
+public class BeginnerQuestion2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("How many numbers?: ");
+        int N = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= N; i++) {
+            sum += sc.nextInt();
+        }
+
+        float avg = (float) sum / (float) N;
+
+        System.out.printf("The sum of %d no is: %d\n", N, sum);
+        System.out.printf("The Average is: %f\n", avg);
+
+    }
+}
+
+//Task 3
+
+import java.util.Scanner;
+
+public class BeginnerQuestion3 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = 0;
+        int sqr = 0;
+
+        while (true) {
+            System.out.printf("Enter Number: ");
+            num = sc.nextInt();
+            if (num < 0)
+                break;
+            sqr = (num * num);
+            System.out.printf("%d ^ 2 = %d\n", num, sqr);
+        }
+
+    }
+}
+
+//Task 4
+
+import java.util.Scanner;
+
+public class BeginnerQuestion4 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int num = sc.nextInt();
+
+        System.out.printf("Divisors of %d:\n", num);
+
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0)
+                System.out.println(i);
+
+        }
+
+    }
+}
+
+
+//Task 5
+
+import java.util.Scanner;
+
+public class BeginnerQuestion5 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter an integer: ");
+        int N = sc.nextInt();
+
+        int pos = 0;
+        int neg = 0;
+
+        int num = 0;
+
+        for (int i = 1; i <= N; i++) {
+            System.out.printf("Enter number %d: ", i);
+            num = sc.nextInt();
+
+            if (num >= 0)
+                pos++;
+            else if (num < 0)
+                neg++;
+        }
+
+        System.out.printf("%d Non-negative Numbers\n", pos);
+        System.out.printf("%d Negative Numbers\n", neg);
+
+    }
+}
+
+
+//Task 6
+
+import java.util.Scanner;
+
+public class BeginnerQuestion6 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Input number of terms: ");
+        int n = sc.nextInt();
+        int sum = 0;
+
+        System.out.println("The odd numbers are: ");
+
+        for (int i = 0; i < n; i++) {
+            int oddNum = (2 * i) + 1;
+            System.out.printf("%d\n", oddNum);
+            sum += oddNum;
+        }
+        System.out.printf("The sum of odd Natural Numbers up to %d terms is: %d\n", n, sum);
+
+    }
+}
+
+
+//Task 7
+
+import java.util.Scanner;
+
+public class BeginnerQuestion7 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int sum = 0;
+
+        for (int i = 0; i < 10; i++) {
+            System.out.printf("Enter number: ");
+            int n = sc.nextInt();
+            sum += n;
+            System.out.printf("Sum = %d\n", sum);
+
+        }
+
+    }
+}
+
+
+//Task 8
+
+import java.util.Scanner;
+
+public class BeginnerQuestion8 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 5 == 0 && i % 3 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+//Task 9
+
+import java.util.Scanner;
+
+public class BeginnerQuestion9 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int n = sc.nextInt();
+        int digit = 0;
+
+        while (true) {
+            if (n == 0)
+                break;
+            else if (n != 0) {
+                n /= 10;
+                digit++;
+            }
+        }
+
+        System.out.println(digit);
+
+    }
+}
+
+
+//Task 10
+
+import java.util.Scanner;
+
+public class BeginnerQuestion10 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int num = sc.nextInt();
+        String numLength = "" + num;
+        int tempNum = num;
+
+        System.out.println(numLength);
+
+        int[] digit = new int[numLength.length()];
+        int i = 0;
+
+        while (true) {
+            if (num < 0) {
+                num = num * (-1);
+                // digit[numLength.length() - 1] = num / (-1) * (int) Math.pow(10,
+                // (numLength.length() - 1));
+            }
+            digit[i] = (num % 10);
+            i++;
+            num /= 10;
+
+            if (num <= 0) {
+                break;
+            }
+        }
+
+        num = tempNum;
+
+        if (digit[numLength.length() - 1] == 0) {
+            digit[numLength.length() - 1] = -digit[numLength.length() - 2];
+        }
+
+        for (int j = digit.length - 1; j > 0; j--) {
+            if (j == digit.length - 2 && num < 0) {
+                continue;
+            }
+            System.out.printf("%d, ", digit[j]);
+        }
+        System.out.printf("%d", digit[0]);
+    }
+}
+
+//Task 11.a
+
+import java.util.Scanner;
+
+public class BeginnerQuestion11_a {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int num = sc.nextInt();
+
+        int divisors = 0;
+        // int isPerfect = 0;
+
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                divisors++;
+            }
+        }
+
+        if (divisors == 2)
+            System.out.printf("Prime\n");
+        else if (divisors > 2)
+            System.out.printf("Not Prime\n");
+    }
+}
+
+//Task 11.b
+
+import java.util.Scanner;
+
+public class BeginnerQuestion11_b {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.printf("Enter number: ");
+        int num = sc.nextInt();
+
+        int isPerfect = 0;
+
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                isPerfect += i;
+            }
+        }
+
+        if (isPerfect == num)
+            System.out.printf("Perfect\n");
+        else if (isPerfect != num)
+            System.out.printf("Not Perfect\n");
+    }
+}
