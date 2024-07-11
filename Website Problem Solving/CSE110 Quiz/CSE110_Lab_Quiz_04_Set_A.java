@@ -15,6 +15,14 @@ public class CSE110_Lab_Quiz_04_Set_A {
         int beats = 0;
         int sum = 0;
 
+        // float tempMin = Float.POSITIVE_INFINITY; --> For the Same Technique
+        // for Floats
+        // float tempMax = Float.NEGATIVE_INFINITY;
+
+        // double tempMax = Double.NEGATIVE_INFINITY; --> For the Same Technique
+        // for Doubles
+        // double tempMin = Double.POSITIVE_INFINITY;
+
         for (int i = 1; i <= num; i++) {
             System.out.printf("Enter heart rate %d: ", i);
             beats = sc.nextInt();
