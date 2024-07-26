@@ -52,7 +52,7 @@ public class Lesson9SettersAndGetters {
 
         Student st = new Student();
 
-        st.setName("Chris RedField");
+        st.setName("Partho Probal");
         st.setId(12345678);
 
         System.out.printf("%s\n", st.getName());
