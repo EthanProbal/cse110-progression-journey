@@ -4,8 +4,8 @@ public class BeginnerQuestion_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("");
-        String myString = "I am a good boy";
+        System.out.printf("Enter your favourite sentence: ");
+        String myString = sc.nextLine();
 
         for (int i = 0; i < myString.length(); i++) {
             int charAsciiVal = (int) myString.charAt(i);
